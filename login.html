@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - M&N Shoes</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<header>
+    <img src="logo1HH.png" class="logo">
+    <div class="title">
+        <h1>M&N</h1>
+        <h2>SHOES</h2>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="accueil.html">Accueil</a></li>
+
+            <li class="dropdown">
+                <span class="drop-btn">Catégories ▾</span>
+                <div class="dropdown-content">
+                    <a href="femme.html">Femme</a>
+                    <a href="homme.html">Homme</a>
+                    <a href="enfants.html">Enfants</a>
+                </div>
+            </li>
+
+            <li><a href="apropos.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="login-box">
+    <h2>Se connecter</h2>
+
+    <!-- الفورم الآن يودي مباشرة لـ accueil.html -->
+    <form action="accueil.html" method="GET">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Votre email" required>
+
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password" placeholder="Votre mot de passe" required>
+
+        <button type="submit">Connexion</button>
+
+        <div class="links">
+            <p>Pas encore inscrit ? <a href="COP.html">Créer un compte</a></p>
+            <p><a href="pass.html">Mot de passe oublié ?</a></p>
+        </div>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 M&N SHOES — Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
