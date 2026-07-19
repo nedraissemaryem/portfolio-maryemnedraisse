@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - M&N Shoes</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+
+<header>
+    <h1>M&N SHOES</h1>
+    <nav>
+        <a href="accueil.html">Accueil</a>
+        <a href="femme.html">Femme</a>
+        <a href="homme.html">Homme</a>
+        <a href="enfants.html">Enfants</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="checkout-box">
+    <h2>Informations de Livraison et Paiement</h2>
+    <form action="#" method="POST">
+        <label for="fullname">Nom complet</label>
+        <input type="text" id="fullname" placeholder="Votre nom" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Votre email" required>
+
+        <label for="phone">Téléphone</label>
+        <input type="tel" id="phone" placeholder="Ex: 06 00 00 00 00" required>
+
+        <label for="address">Adresse de livraison</label>
+        <input type="text" id="address" placeholder="Rue, Ville, Code postal" required>
+
+        <label for="payment">Mode de paiement</label>
+        <select id="payment" required>
+            <option>Carte bancaire</option>
+            <option>PayPal</option>
+            <option>Virement bancaire</option>
+            <option>Paiement à la livraison</option>
+        </select>
+
+        <button type="submit">Confirmer la commande</button>
+    </form>
+</section>
+
+</body>
+</html>

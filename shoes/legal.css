@@ -1,0 +1,132 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Georgia", serif;
+}
+
+/* ===== BODY ===== */
+body {
+    background-color: #f7f7f4; /* blanc cassé */
+    color: #111; /* نص كحل */
+}
+
+/* ===== HEADER ===== */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #b8860b;
+    z-index: 50;
+}
+
+.logo h1 {
+    color: #b8860b;
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #111;
+    font-size: 16px;
+}
+
+.header-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.header-menu a {
+    color: #111;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.header-menu a:hover {
+    color: #b8860b;
+    border-bottom: 1px solid #b8860b;
+}
+
+/* ===== MAIN CONTENT ===== */
+.legal-container {
+    max-width: 900px;
+    margin: 120px auto 60px; /* space for fixed header */
+    padding: 0 30px;
+}
+
+.legal-container h2 {
+    color: #b8860b;
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.legal-container section {
+    margin-bottom: 30px;
+}
+
+.legal-container h3 {
+    color: #b8860b;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.legal-container p {
+    line-height: 1.7;
+    font-size: 16px;
+    color: #111;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #b8860b;
+    background-color: #ffffff;
+    color: #111;
+    font-size: 14px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .header-menu {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .legal-container {
+        padding: 0 20px;
+        margin-top: 100px;
+    }
+
+    .legal-container h2 {
+        font-size: 28px;
+    }
+
+    .legal-container h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .legal-container h2 {
+        font-size: 24px;
+    }
+
+    .legal-container h3 {
+        font-size: 16px;
+    }
+}

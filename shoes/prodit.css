@@ -1,0 +1,59 @@
+.produit-page{
+  background:#2b0f1d;
+  color:#fff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.produit-box{
+  background:#1c0a13;
+  padding:30px;
+  width:320px;
+  border:1px solid #c07a95;
+  border-radius:12px;
+  text-align:center;
+}
+
+.prix{
+  color:#f4d1dd;
+  font-size:20px;
+  margin:10px 0;
+}
+
+.tailles{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin:15px 0;
+}
+
+.tailles span{
+  border:1px solid #c07a95;
+  padding:8px 12px;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.tailles span:hover{
+  background:#c07a95;
+  color:#1c0a13;
+}
+
+.actions{
+  margin-top:20px;
+}
+
+.actions button{
+  padding:10px 15px;
+  margin:5px;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.actions .commander{
+  background:#c07a95;
+  color:#1c0a13;
+}
