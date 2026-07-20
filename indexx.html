@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Meriem Portfolio</title>
-  <link rel="stylesheet" href="stylee.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meriem Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <nav class="navbar">
+  <div class="brand">M<span>.</span>N</div>
   <ul class="nav-links">
     <li><a href="#welcome">Accueil</a></li>
     <li><a href="#about">About me</a></li>
@@ -17,222 +23,191 @@
 </nav>
 
 <section class="mer" id="welcome">
+
+  <div class="glow-field" aria-hidden="true">
+    <span class="orb orb-a"></span>
+    <span class="orb orb-b"></span>
+    <span class="orb orb-c"></span>
+    <span class="orb orb-d"></span>
+    <span class="spark s1"></span>
+    <span class="spark s2"></span>
+    <span class="spark s3"></span>
+    <span class="spark s4"></span>
+    <span class="spark s5"></span>
+    <svg class="leaf leaf-1" viewBox="0 0 60 60"><path d="M30 2C44 10 54 24 52 40C40 46 20 44 10 32C6 20 14 6 30 2Z"/></svg>
+    <svg class="leaf leaf-2" viewBox="0 0 60 60"><path d="M30 2C44 10 54 24 52 40C40 46 20 44 10 32C6 20 14 6 30 2Z"/></svg>
+  </div>
+
   <div class="welcome-text">
-    <h1 class="title">Meriem Nedraisse</h1>
-    <p class="sbout">
+    <p class="eyebrow">Développement digital · Casablanca</p>
+    <h1 class="title">Meriem<br>Nedraisse</h1>
+    <p class="sabout">
       Étudiante en développement digital, passionnée par la création de sites web modernes et l'apprentissage continu.
     </p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn-primary">Voir les projets</a>
+      <a href="#contact" class="btn-ghost">Me contacter</a>
+    </div>
   </div>
-  <div class="img1">
-    <img src="port.jpg" alt="Profile">
+
+  <div class="hero-img">
+    <img src="hero.png" alt="Coding">
   </div>
 </section>
 
 <section class="aboutme" id="about">
+  <p class="eyebrow eyebrow-dark">Qui suis-je</p>
   <h2>About me</h2>
-  <p>
+  <p class="about-text">
     Hello, my name is Meriem. I am a first-year student in Digital Development.
-     I love creating web pages and making interactive digital projects.
-      I am motivated and always ready to learn more about web development. 
-    I have learned HTML, CSS, and Python, and I enjoy using them to build websites that are both creative and useful.
+    I love creating web pages and making interactive digital projects.
+    I am motivated and always ready to learn more about web development.
+    I have learned HTML, CSS, Python, PHP and JavaScript, and I enjoy using them
+    to build websites that are both creative and useful.
   </p>
 </section>
 
 <section class="comp-sec" id="langs">
-  <h2>Langages</h2>
+  <p class="eyebrow eyebrow-dark">Ce que j'utilise</p>
+<h2>Skills</h2>
   <div class="lang">
-    <div class="lang1 html">
-      <img src="html.jpg" alt="HTML">
+    <div class="lang1">
+      <div class="lang-icon ic-html">&lt;/&gt;</div>
       <h3>HTML</h3>
       <p>Création de la structure des pages web, respect de la sémantique, accessibilité et bonnes pratiques SEO.</p>
     </div>
-    <div class="lang1 css">
-      <img src="css.png" alt="CSS">
+    <div class="lang1">
+      <div class="lang-icon ic-css">#</div>
       <h3>CSS</h3>
-      <p>Mise en page moderne, animations, responsive design et création d’interfaces élégantes.</p>
+      <p>Mise en page moderne, animations, responsive design et création d'interfaces élégantes.</p>
     </div>
-    <div class="lang1 python">
-      <img src="python.png" alt="Python">
+    <div class="lang1">
+      <div class="lang-icon ic-python">Py</div>
       <h3>Python</h3>
       <p>Logique de programmation, scripts, résolution de problèmes et mini-projets backend.</p>
     </div>
+    <div class="lang1">
+      <div class="lang-icon ic-php">Php</div>
+      <h3>PHP</h3>
+      <p>Développement backend, gestion de bases de données MySQL et création de sites dynamiques.</p>
+    </div>
+    <div class="lang1">
+      <div class="lang-icon ic-js">Js</div>
+      <h3>JavaScript</h3>
+      <p>Interactivité côté client, manipulation du DOM et logique dynamique pour des interfaces vivantes.</p>
+    </div>
+    <div class="lang1">
+<div class="lang-icon ic-sql">SQL</div>
+    <h3>SQL</h3>
+    <p>Conception de bases de données, requêtes SQL, MySQL, relations, optimisation et gestion des données.</p>
+</div>
   </div>
 </section>
 
 <section class="projects-sec" id="projects">
-    <h2>Projets</h2>
+  <p class="eyebrow eyebrow-dark">Réalisations</p>
+  <h2>Projets</h2>
 
-    <div class="projects-container">
+  <div class="projects-container">
 
-        
-
-        <div class="card">
-            <img src="calcul1.jpeg" alt="">
-            <h3>Calculator Tkinter</h3>
-            <p>Calculatrice développée avec Python et Tkinter.</p>
-
-            <a href="https://github.com/nedraissemaryem/01_calculatrice_tkinter" target="_blank">
-                💻 Code Source
-            </a>
-
-            <br><br>
-
-            <a href="calcul1.mp4" target="_blank">
-                🎥 Demo Video
-            </a>
-        </div>
-
-        <div class="card">
-            <img src="calcu2.jpeg" alt="">
-
-            <h3>Calculator PyQt</h3>
-
-            <p>Modern desktop calculator developed with Python and PyQt5.</p>
-
-            <a href="https://github.com/nedraissemaryem/02_calculatrice_pyqt" target="_blank">
-                GitHub
-            </a>
-
-            <br><br>
-
-            <a href="calcu2.mp4" target="_blank">
-                Demo Video
-            </a>
-        </div>
-
-        <div class="card">
-            <img src="nett.jpg" alt="">
-
-            <h3>File Hash Scanner</h3>
-
-            <p>
-                Python application that scans files using SHA-256 hashes to detect known malicious files.
-            </p>
-
-            <a href="https://github.com/nedraissemaryem/03_nettoyeur_fichiers_hash" target="_blank">
-                GitHub
-            </a>
-
-            <br><br>
-
-            <a href="nett.mp4" target="_blank">
-                Demo Video
-            </a>
-        </div>
-        <div class="card">
-    <img src="app.png" alt="PC Finder">
-
-    <h3>PC Finder</h3>
-
-    <p>
-        Web application built with Flask and Selenium to compare PC prices from multiple e-commerce websites.
-    </p>
-
-    <a href="https://github.com/nedraissemaryem/pc_finder" target="_blank">
-        GitHub
-    </a>
-
-    <br><br>
-
-    <a href="app.mp4" target="_blank">
-        Demo Video
-    </a>
-</div>
-<div class="card">
-    <img src="chat.png" alt="Django E-commerce">
-
-    <h3>Django E-commerce</h3>
-
-    <p>
-        Application e-commerce développée avec Django.
-        Elle comprend un système d'authentification, la gestion des produits,
-        un panier d'achat, un processus de commande et un tableau de bord administrateur.
-    </p>
-
-    <a href="https://github.com/nedraissemaryem/ecommerce_project" target="_blank">
-        💻 Code source
-    </a>
-
-    <br><br>
-
-    <a href="https://meriemned.pythonanywhere.com/" target="_blank">
-        🌐 Démo en ligne
-    </a>
-
-    <br><br>
-
-    <a href="ecom.mp4" target="_blank">
-        🎥 Démo vidéo
-    </a>
-</div>
-<div class="card">
-    <img src="run.png" alt="Runner Game">
-
-    <h3>Runner Game</h3>
-
-    <p>
-        Jeu 2D développé avec Python et Pygame.
-        Le joueur évite les obstacles, collecte des pièces et réalise le meilleur score possible.
-    </p>
-
-    <a href="https://github.com/nedraissemaryem/runner-game-pygame" target="_blank">
-        💻 Code Source
-    </a>
-
-    <br><br>
-
-    <a href="run.mp4" target="_blank">
-        🎥 Démo vidéo
-    </a>
-</div>
-<div class="card">
-    <img src="rac.png" alt="URL Shortener">
-
-    <h3>Django URL Shortener</h3>
-
-    <p>
-        Application web développée avec Django permettant de créer, raccourcir et gérer des liens.
-        Elle inclut les statistiques de clics, la redirection automatique et une interface simple.
-    </p>
-
-    <a href="https://github.com/nedraissemaryem/06_raccourcisseur_django" target="_blank">
-        💻 Code Source
-    </a>
-
-    <br><br>
-
-    <a href="rac.mp4" target="_blank">
-        🎥 Démo vidéo
-    </a>
-</div>
-<div class="card">
-    <img src="logo1HH.png" alt="M&N Shoes">
-
-    <h3>M&N Shoes - E-commerce</h3>
-
-    <p>
-        Site e-commerce dynamique développé avec PHP, MySQL et PDO.
-        Gestion des produits, authentification, panier et interface d'administration.
-    </p>
-
-    <a href="https://mmnsheos.freehosting.dev" target="_blank">
-        🌐 Démo en ligne
-    </a>
-
-    <br><br>
-
-    <a href="Site.mp4" target="_blank">
-        🎥 Démo vidéo
-    </a>
-</div>
+    <div class="card">
+      <img src="calcul1.jpeg" alt="Calculator Tkinter">
+      <h3>Calculator Tkinter</h3>
+      <p>Calculatrice développée avec Python et Tkinter.</p>
+      <div class="card-links">
+        <a href="https://github.com/nedraissemaryem/01_calculatrice_tkinter" target="_blank">💻 Code Source</a>
+        <a href="calcul1.mp4" target="_blank">🎥 Demo Video</a>
+      </div>
     </div>
 
+    <div class="card">
+      <img src="calcu2.jpeg" alt="Calculator PyQt">
+      <h3>Calculator PyQt</h3>
+      <p>Modern desktop calculator developed with Python and PyQt5.</p>
+      <div class="card-links">
+        <a href="https://github.com/nedraissemaryem/02_calculatrice_pyqt" target="_blank">💻 GitHub</a>
+        <a href="calcu2.mp4" target="_blank">🎥 Demo Video</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="nett.jpg" alt="File Hash Scanner">
+      <h3>File Hash Scanner</h3>
+      <p>Python application that scans files using SHA-256 hashes to detect known malicious files.</p>
+      <div class="card-links">
+        <a href="https://github.com/nedraissemaryem/03_nettoyeur_fichiers_hash" target="_blank">💻 GitHub</a>
+        <a href="nett.mp4" target="_blank">🎥 Demo Video</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="app.png" alt="PC Finder">
+      <h3>PC Finder</h3>
+      <p>Web application built with Flask and Selenium to compare PC prices from multiple e-commerce websites.</p>
+      <div class="card-links">
+        <a href="https://github.com/nedraissemaryem/pc_finder" target="_blank">💻 GitHub</a>
+        <a href="app.mp4" target="_blank">🎥 Demo Video</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="chat.png" alt="Django E-commerce">
+      <h3>Django E-commerce</h3>
+      <p>Application e-commerce développée avec Django. Elle comprend un système d'authentification, la gestion des produits, un panier d'achat, un processus de commande et un tableau de bord administrateur.</p>
+      <div class="card-links">
+        <a href="https://github.com/nedraissemaryem/ecommerce_project" target="_blank">💻 Code source</a>
+        <a href="https://meriemned.pythonanywhere.com/" target="_blank">🌐 Démo en ligne</a>
+        <a href="ecom.mp4" target="_blank">🎥 Démo vidéo</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="run.png" alt="Runner Game">
+      <h3>Runner Game</h3>
+      <p>Jeu 2D développé avec Python et Pygame. Le joueur évite les obstacles, collecte des pièces et réalise le meilleur score possible.</p>
+      <div class="card-links">
+        <a href="https://github.com/nedraissemaryem/runner-game-pygame" target="_blank">💻 Code Source</a>
+        <a href="run.mp4" target="_blank">🎥 Démo vidéo</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="rac.png" alt="URL Shortener">
+      <h3>Django URL Shortener</h3>
+      <p>Application web développée avec Django permettant de créer, raccourcir et gérer des liens. Elle inclut les statistiques de clics, la redirection automatique et une interface simple.</p>
+      <div class="card-links">
+        <a href="https://github.com/nedraissemaryem/06_raccourcisseur_django" target="_blank">💻 Code Source</a>
+        <a href="rac.mp4" target="_blank">🎥 Démo vidéo</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="logo1HH.png" alt="M&N Shoes">
+      <h3>M&amp;N Shoes - E-commerce</h3>
+      <p>Site e-commerce dynamique développé avec PHP, MySQL et PDO. Gestion des produits, authentification, panier et interface d'administration.</p>
+      <div class="card-links">
+        <a href="https://mmnsheos.freehosting.dev" target="_blank">🌐 Démo en ligne</a>
+        <a href="Site.mp4" target="_blank">🎥 Démo vidéo</a>
+      </div>
+    </div>
+
+  </div>
 </section>
 
 <section class="contacts" id="contact">
+  <div class="glow-field glow-field-contact" aria-hidden="true">
+    <span class="orb orb-e"></span>
+    <span class="orb orb-f"></span>
+  </div>
+  <p class="eyebrow">Restons en contact</p>
   <h2>Contact</h2>
-  <p><a href="email: nedraissemaryem@gmail.com">📧Email : nedraissemaryem@gmail.com</a></p>
-  <a href=" tel:+212632655593">📱tel : +212 632655593</a>
+  <div class="contact-links">
+    <a href="mailto:nedraissemaryem@gmail.com">📧 nedraissemaryem@gmail.com</a>
+    <a href="https://github.com/nedraissemaryem" target="_blank">💻 GitHub</a>
+    <a href="tel:+212632655593">📱 +212 632 655 593</a>
+  </div>
+  <p class="copyright">© 2026 Meriem Nedraisse</p>
 </section>
+
 </body>
 </html>
